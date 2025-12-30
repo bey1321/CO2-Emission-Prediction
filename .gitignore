@@ -17,6 +17,11 @@ env/
 # Jupyter / IPython
 # ===============================
 .ipynb_checkpoints/
+*.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+.jupyter/
+profile_default/
+ipython_config.py
 
 # ===============================
 # VS Code / IDEs
@@ -38,16 +43,13 @@ Thumbs.db
 *.tmp
 
 # ===============================
-# Data files (optional)
-# Uncomment if you don't want to push datasets
-# ===============================
-# *.csv
-# *.xlsx
-# *.json
-
-# ===============================
 # Model artifacts
 # ===============================
 *.pkl
 *.joblib
 *.h5
+
+# ===============================
+# Jupyter Notebook Output
+# ===============================
+*.ipynb filter=strip-notebook-output

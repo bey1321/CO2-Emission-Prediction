@@ -4,6 +4,32 @@ Predict CO₂ emissions of vehicles using **linear regression** with multiple fe
 
 ---
 
+## Getting Started
+
+### Prerequisites
+- Python 3.7+
+- Jupyter Notebook or JupyterLab
+
+### Installation
+
+1. Clone the repository:
+   ```bash
+   git clone <repository-url>
+   cd "CO2 Emission Prediction"
+   ```
+
+2. Install required packages:
+   ```bash
+   pip install numpy pandas matplotlib scikit-learn seaborn jupyter
+   ```
+
+3. Launch Jupyter Notebook:
+   ```bash
+   jupyter notebook main.ipynb
+   ```
+
+---
+
 ## Dataset
 
 - **Source:** `CO2 Emissions_Canada.csv`  
@@ -66,9 +92,64 @@ Predict CO₂ emissions of vehicles using **linear regression** with multiple fe
 
 ---
 
-## Visualization
+## Visualizations
 
-- **Validation Predictions vs Actual CO₂ Emissions:**
-  - Blue points → Gradient Descent predictions
-  - Green points → scikit-learn predictions
-  - Red dashed line → Ideal predictions
+The notebook includes several visualizations:
+
+1. **Feature Distribution Analysis:**
+   - Scatter plots showing the relationship between each feature and CO₂ emissions
+   - Helps identify correlations and data patterns
+
+2. **Training Progress:**
+   - Cost history during gradient descent iterations
+   - Weight evolution over training iterations
+   - Demonstrates convergence behavior
+
+3. **Model Predictions Comparison:**
+   - Actual vs. Predicted CO₂ Emissions scatter plot
+   - Blue points → Gradient Descent predictions
+   - Green points → scikit-learn predictions
+   - Red dashed line → Ideal predictions (y = x)
+
+---
+
+## Project Structure
+
+```
+CO2 Emission Prediction/
+│
+├── main.ipynb                      # Jupyter notebook with complete implementation
+├── CO2 Emissions_Canada.csv        # Dataset
+└── README.md                       # Project documentation
+```
+
+---
+
+## Key Learnings
+
+- **Gradient Descent Implementation:** Understanding the mathematics behind linear regression optimization
+- **Feature Scaling:** Importance of standardization for gradient descent convergence
+- **Model Comparison:** Validating custom implementations against industry-standard libraries
+- **Performance Metrics:** Using MSE and R² score for model evaluation
+
+---
+
+## Future Enhancements
+
+- Implement regularization techniques (Ridge, Lasso)
+- Explore polynomial features for non-linear relationships
+- Add cross-validation for more robust evaluation
+- Experiment with other regression algorithms (Random Forest, XGBoost)
+- Create interactive visualizations using Plotly
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---
+
+## Author
+
+Created as a machine learning demonstration project for CO₂ emissions prediction.
